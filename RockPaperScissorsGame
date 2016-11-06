@@ -83,6 +83,23 @@ string ValidateSelection(string sGetSel, int iPlayerID){
     return sGetSel;
 }
 
+string CompSelect(){
+    int iRandomize;
+    iRandomize = rand();
+    srand(iRandomize);
+    iRandomize = rand() % 3;
+    iRandomize++;
+    if (iRandomize == 1){
+        return "R"; 
+    }else if(iRandomize == 2){
+        return "P";
+    }else if(iRandomize == 3){
+        return "S";
+    }else{
+        return "E"; 
+    } 
+}
+
 void getwinner(string sPl1, string sPl2){
 
     //Declare function variable
@@ -137,6 +154,7 @@ int main() {
     char cP1;
     char cP2;
     int iNoOfPlayers;
+    int iRandomize;
     string sPSel1; //Player 1 Selection
     string sPSel2; //Player 2 Selection
     
@@ -163,7 +181,9 @@ int main() {
             sPSel2 = ValidateSelection(sPSel2, 2);
         }else{
          cout << "Computer will be playing as Player 2!\n";
-         sPSel2 = "R";   
+        
+    
+         sPSel2 = CompSelect();   
         }
         
         cout << "=-= Let the game begin =-=" << endl;
