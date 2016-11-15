@@ -11,3 +11,7 @@ Unless noted otherwise here, all files should compile by themselves (with the st
 
   *ASCII Char:
     Print a list of all ASCII Char to the screen using a While loop
+
+  *Crypt.cpp:
+    First Encryption attempt. I would not encrypt sensitive data using this; 
+    but could be used for files you do not wish to see the average users editing...
