@@ -45,7 +45,6 @@ void CountVowels (string sTextToCheck){
     char cTxt;
 
     for (int i = 0; i < sTextToCheck.size()+1; i++){
-    //cout << cTxt << endl;
     cTxt = sTextToCheck[i];
     cTxt = toupper(cTxt);
         switch(cTxt){
@@ -89,9 +88,9 @@ void OpenFile(){
     cout << endl;
     ifstream MyFile(sFileName.c_str());
     if(!MyFile.is_open()){
-        cout << "There was an error opening this file. Please try again\n\n";
+        cout << "There was an error opening this file. Please try again.\n";
         cout << "If the file is not in the same path as this application,\n";
-        cout << "Be sure to specify the full path.\n"
+        cout << "be sure to specify the full path.\n";
         OpenFile();
     }
     else {
@@ -110,7 +109,6 @@ int main() {
     cout << "This program will take a text and return the amount of vowels in the text... \n\n";
 
     sSelect = ProgMenu();
-    cout << sSelect;
     if (sSelect == "F"){
         OpenFile();
     }
@@ -134,6 +132,6 @@ int main() {
     cout << "There are " << iCountOs << " \"O\"s in this text." << endl;
     cout << "There are " << iCountUs << " \"U\"s in this text." << endl;
     cout << "There are " << iCountYs << " \"Y\"s in this text." << endl;
-    
+
     return 0;
 }
