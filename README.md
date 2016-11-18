@@ -15,3 +15,9 @@ Unless noted otherwise here, all files should compile by themselves (with the st
   *Crypt.cpp:
     First Encryption attempt. I would not encrypt sensitive data using this; 
     but could be used for files you do not wish to see the average users editing...
+  
+  *VowelCount.cpp:
+    Count the number of vowels in a text or file (chosen by the user) and return the total for each vowels, 
+    as well as a total for all vowels in the text.
+    
+  
