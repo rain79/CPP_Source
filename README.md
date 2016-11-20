@@ -20,4 +20,8 @@ Unless noted otherwise here, all files should compile by themselves (with the st
     Count the number of vowels in a text or file (chosen by the user) and return the total for each vowels, 
     as well as a total for all vowels in the text.
     
-  
+  *LICENSE:
+	The license file for the code contained within this structure.
+
+  *README.MD
+	This file.
